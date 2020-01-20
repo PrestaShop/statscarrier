@@ -2,7 +2,7 @@
   "name": "prestashop/statscarrier",
   "description": "PrestaShop module statscarrier",
   "homepage": "https://github.com/PrestaShop/statscarrier",
-  "license": "AFL - Academic Free License (AFL 3.0)",
+  "license": "AFL-3.0",
   "authors": [
     {
       "name": "PrestaShop SA",
