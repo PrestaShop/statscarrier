@@ -44,7 +44,7 @@ class statscarrier extends ModuleGraph
         parent::__construct();
 
         $this->displayName = $this->trans('Carrier distribution', array(), 'Modules.Statscarrier.Admin');
-        $this->description = $this->trans('Adds a graph displaying each carriers\' distribution to the Stats dashboard.', array(), 'Modules.Statscarrier.Admin');
+        $this->description = $this->trans('Enrich your stats, add a pie chart illustrating your carriers’ distribution.', array(), 'Modules.Statscarrier.Admin');
         $this->ps_versions_compliancy = array('min' => '1.7.1.0', 'max' => _PS_VERSION_);
     }
 
