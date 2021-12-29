@@ -37,7 +37,7 @@ class statscarrier extends ModuleGraph
     {
         $this->name = 'statscarrier';
         $this->tab = 'analytics_stats';
-        $this->version = '2.0.0';
+        $this->version = '2.0.1';
         $this->author = 'PrestaShop';
         $this->need_instance = 0;
 
@@ -50,10 +50,10 @@ class statscarrier extends ModuleGraph
 
     public function install()
     {
-        return (parent::install() && $this->registerHook('AdminStatsModules'));
+        return (parent::install() && $this->registerHook('displayAdminStatsModules'));
     }
 
-    public function hookAdminStatsModules($params)
+    public function hookDisplayAdminStatsModules($params)
     {
         $sql = 'SELECT COUNT(o.`id_order`) as total
 				FROM `'._DB_PREFIX_.'orders` o
