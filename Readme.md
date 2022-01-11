@@ -2,7 +2,7 @@
 
 ## About
 
-Adds a graph displaying each carriers' distribution to the Stats dashboard.
+Enrich your stats, add a pie chart illustrating your carriers’ distribution.
 
 ## Reporting issues
 
