@@ -131,7 +131,7 @@ class statscarrier extends ModuleGraph
 				WHERE o.`date_add` BETWEEN '.ModuleGraph::getDateBetween().'
 					'.Shop::addSqlRestriction(Shop::SHARE_ORDER, 'o').'
 					'.$state_query.'
-				GROUP BY c.`id_carrier`';
+				GROUP BY c.`id_reference`';
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql);
         foreach ($result as $row) {
             $this->_values[] = $row['total'];
